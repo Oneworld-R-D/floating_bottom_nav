@@ -1,11 +1,8 @@
 # floating_bottom_nav
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/gairick-saha/floating_bottom_nav.svg)
-
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/gairick-saha/floating_bottom_nav.svg)
-
 ![GitHub top language](https://img.shields.io/github/languages/top/gairick-saha/floating_bottom_nav.svg)
-
 [![GitHub issues](https://img.shields.io/github/issues/gairick-saha/floating_bottom_nav.svg)](https://github.com/gairick-saha/floating_bottom_nav/issues)
 [![GitHub license](https://img.shields.io/github/license/gairick-saha/floating_bottom_nav.svg)](https://github.com/gairick-saha/floating_bottom_nav/blob/master/LICENSE)
 
