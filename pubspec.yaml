@@ -1,6 +1,6 @@
 name: floating_bottom_nav
 description: Floating bottom navigation package for flutter.
-version: 0.0.1
+version: 1.0.0
 homepage: https://github.com/gairick-saha/floating_bottom_nav
 
 environment:
