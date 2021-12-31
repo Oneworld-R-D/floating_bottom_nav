@@ -1,4 +1,4 @@
-# progress_loading_button
+# floating_bottom_nav
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/gairick-saha/floating_bottom_nav.svg)
 
