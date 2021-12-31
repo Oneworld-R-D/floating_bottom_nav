@@ -47,18 +47,22 @@ Adding the widget
 ```
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingBottomNavBar(
-        currentIndex: selectedPageIndex,
-        onTap: (i) {
-          print(i);
+        currentIndex: _selectedIndex,
+        onTap: (int index) {
           setState(() {
-            selectedPageIndex = i;
+            _selectedIndex = index;
           });
+          _pageController.animateToPage(
+            _selectedIndex,
+            duration: const Duration(milliseconds: 600),
+            curve: Curves.easeOutQuad,
+          );
         },
-        items: [
+        items: const [
           Icons.home,
-          Icons.search,
-          Icons.chat_bubble_outline_rounded,
-          Icons.person
+          Icons.explore,
+          Icons.favorite,
+          Icons.person,
         ],
       ),
 ```
