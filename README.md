@@ -1,39 +1,72 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# progress_loading_button
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+![GitHub repo size](https://img.shields.io/github/repo-size/gairick-saha/floating_bottom_nav.svg)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/gairick-saha/floating_bottom_nav.svg)
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+![GitHub top language](https://img.shields.io/github/languages/top/gairick-saha/floating_bottom_nav.svg)
 
-## Features
+[![GitHub issues](https://img.shields.io/github/issues/gairick-saha/floating_bottom_nav.svg)](https://github.com/gairick-saha/floating_bottom_nav/issues)
+[![GitHub license](https://img.shields.io/github/license/gairick-saha/floating_bottom_nav.svg)](https://github.com/gairick-saha/floating_bottom_nav/blob/master/LICENSE)
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+**floating_bottom_nav** is a free and open source (MIT license) Material Flutter BottomNavigationBar that supports customization of background color, selectedIconColor, unselectedItemColor also light & dark theme support.
 
-## Getting started
+## Get started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add this to your package's pubspec.yaml file:
 
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
-```dart
-const like = 'sample';
+```yaml
+floating_bottom_nav: '^1.0.0'
 ```
 
-## Additional information
+### **Install it**
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+You can install packages from the command line:
+
+```
+$ flutter pub get
+```
+
+Alternatively, your editor might support flutter pub get.
+
+### **Import it**
+
+Now in your Dart code, you can use:
+
+```dart
+import 'package:floating_bottom_nav/floating_bottom_nav.dart';
+
+```
+
+## How to use
+
+Adding the widget
+* Note: it is recommended that you set the floatingActionButtonLocation to [FloatingActionButtonLocation.centerDocked] 
+* Note: it is recommended that you use this widget as the Floadting Action Button
+
+```
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: FloatingBottomNavBar(
+        currentIndex: selectedPageIndex,
+        onTap: (i) {
+          print(i);
+          setState(() {
+            selectedPageIndex = i;
+          });
+        },
+        items: [
+          Icons.home,
+          Icons.search,
+          Icons.chat_bubble_outline_rounded,
+          Icons.person
+        ],
+      ),
+```
+
+## Source
+
+Source code and example of this library can be found in git:
+
+```
+$ git clone https://github.com/gairick-saha/floating_bottom_nav.git
+```
